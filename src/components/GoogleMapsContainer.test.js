@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Map from './Map';
+import GoogleMapsContainer from './GoogleMapsContainer';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -8,6 +8,6 @@ it('renders without crashing', () => {
   	lat: 25,
   	lng: -72
   }
-  ReactDOM.render(<Map center={center} zoom={10} />, div);
+  ReactDOM.render(<GoogleMapsContainer center={center} zoom={10} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

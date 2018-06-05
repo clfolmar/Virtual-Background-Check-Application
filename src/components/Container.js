@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import Map from './Map'
+import GoogleMapsContainer from './GoogleMapsContainer'
 import DataWrapper from './DataWrapper'
 import SearchInput from './SearchInput'
 import superagent from 'superagent'
@@ -275,21 +275,14 @@ class Container extends Component {
             lng: this.state.longitude
         }
 
-        const markers = [
-            {
-                location:{
-                    lat: parseFloat(this.state.latitude),
-                    lng: parseFloat(this.state.longitude)
-                }
-            }
-        ]
-
         return (
             <div>
                 <SearchInput onSubmission={this.ipSearch} />
-                {/*<div style={{width: '100%', height: '30vh', background:'grey'}}>
-                    <Map center={center} zoom={10} markers={markers}/>
-                </div>*/}
+
+                <div style={{width: '100%', height: '30vh', background: 'grey'}}>
+                    <GoogleMapsContainer style={{position: 'relative'}} center={center} zoom={10} />
+                </div>
+
                 <DataWrapper
                     found={this.state.found}
                     address={this.state.address}
