@@ -288,7 +288,7 @@ class Container extends Component {
             <div>
                 <SearchInput onSubmission={this.ipSearch} />
                 {/*<div style={{width: '100%', height: '30vh', background:'grey'}}>
-                    <Map center={googleMapsLocation} zoom={10} markers={markers}/>
+                    <Map center={center} zoom={10} markers={markers}/>
                 </div>*/}
                 <DataWrapper
                     found={this.state.found}
