@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data full snapshot rendering 1`] = `
+<Data>
+  <div
+    className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+  >
+    <div
+      className="features-icons-icon d-flex"
+    >
+      <i
+        className="undefined m-auto text-primary"
+      />
+    </div>
+    <h5 />
+    <p
+      className="mb-0"
+    />
+  </div>
+</Data>
+`;
