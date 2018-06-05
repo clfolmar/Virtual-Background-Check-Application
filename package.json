@@ -7,6 +7,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
+    "startbootstrap-landing-page": "^4.0.0",
     "superagent": "^3.8.3"
   },
   "scripts": {
