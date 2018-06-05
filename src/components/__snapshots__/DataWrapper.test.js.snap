@@ -1,0 +1,392 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataWrapper full snapshot rendering 1`] = `
+<DataWrapper
+  address="1.2.3.4"
+  asCountry="Test AS Country"
+  asName="Test AS Name"
+  asNumber={123}
+  city="Test City"
+  continenet="Test Continent"
+  country="Test Country"
+  found={false}
+  hostname="Test Name"
+  latitude={-72}
+  longitude={45}
+  postal="12345"
+  region="Test Region"
+  timeZone="Test Time Zone"
+>
+  <section
+    className="features-icons bg-light text-center"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <GoodIp
+          address="1.2.3.4"
+        >
+          <div
+            className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+          >
+            <h4>
+              1.2.3.4
+            </h4>
+            <h5
+              style={
+                Object {
+                  "color": "#06B400",
+                }
+              }
+            >
+              Not Found!
+            </h5>
+            <p
+              className="mb-0"
+            >
+              The IP was not found in the database of blacklists!
+            </p>
+          </div>
+        </GoodIp>
+      </div>
+      <h4>
+        IP Geolocation
+      </h4>
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            data="Test Name"
+            header="Hostname"
+            icon="icon-list"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-list m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Hostname
+              </h5>
+              <p
+                className="mb-0"
+              >
+                Test Name
+              </p>
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            header="Continent"
+            icon="icon-map"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-map m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Continent
+              </h5>
+              <p
+                className="mb-0"
+              />
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            data="Test Country"
+            header="Country"
+            icon="icon-home"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-home m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Country
+              </h5>
+              <p
+                className="mb-0"
+              >
+                Test Country
+              </p>
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            data="Test Region"
+            header="Region"
+            icon="icon-direction"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-direction m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Region
+              </h5>
+              <p
+                className="mb-0"
+              >
+                Test Region
+              </p>
+            </div>
+          </Data>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            data="Test City"
+            header="City"
+            icon="icon-vector"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-vector m-auto text-primary"
+                />
+              </div>
+              <h5>
+                City
+              </h5>
+              <p
+                className="mb-0"
+              >
+                Test City
+              </p>
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            data="12345"
+            header="Postal Code"
+            icon="icon-envelope"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-envelope m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Postal Code
+              </h5>
+              <p
+                className="mb-0"
+              >
+                12345
+              </p>
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            data="-72, 45"
+            header="Latitude, Longitude"
+            icon="icon-globe"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-globe m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Latitude, Longitude
+              </h5>
+              <p
+                className="mb-0"
+              >
+                -72, 45
+              </p>
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-3"
+        >
+          <Data
+            data="Test Time Zone"
+            header="Time Zone"
+            icon="icon-clock"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-clock m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Time Zone
+              </h5>
+              <p
+                className="mb-0"
+              >
+                Test Time Zone
+              </p>
+            </div>
+          </Data>
+        </div>
+      </div>
+      <h4>
+        Autonomous System
+      </h4>
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-4"
+        >
+          <Data
+            data={123}
+            header="Number"
+            icon="icon-credit-card"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-credit-card m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Number
+              </h5>
+              <p
+                className="mb-0"
+              >
+                123
+              </p>
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-4"
+        >
+          <Data
+            data="Test AS Name"
+            header="Name"
+            icon="icon-screen-desktop"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-screen-desktop m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Name
+              </h5>
+              <p
+                className="mb-0"
+              >
+                Test AS Name
+              </p>
+            </div>
+          </Data>
+        </div>
+        <div
+          className="col-lg-4"
+        >
+          <Data
+            data="Test AS Country"
+            header="Country"
+            icon="icon-globe-alt"
+          >
+            <div
+              className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
+            >
+              <div
+                className="features-icons-icon d-flex"
+              >
+                <i
+                  className="icon-globe-alt m-auto text-primary"
+                />
+              </div>
+              <h5>
+                Country
+              </h5>
+              <p
+                className="mb-0"
+              >
+                Test AS Country
+              </p>
+            </div>
+          </Data>
+        </div>
+      </div>
+    </div>
+  </section>
+</DataWrapper>
+`;
