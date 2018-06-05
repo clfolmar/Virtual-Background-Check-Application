@@ -6,8 +6,6 @@ import SearchInput from './components/SearchInput.js'
 import DataWrapper from './components/DataWrapper.js'
 import Data from './components/Data.js'
 import Map from './components/Map.js'
-require('dotenv').config();
-
 
 class App extends Component {
   render() {
