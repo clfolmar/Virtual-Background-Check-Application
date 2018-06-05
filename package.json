@@ -4,10 +4,15 @@
   "private": true,
   "homepage": "https://clfolmar.github.io/travis-react-ipverifier/",
   "dependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
     "google-maps-react": "^2.0.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.0",
+    "sinon": "^5.0.10",
     "startbootstrap-landing-page": "^4.0.0",
     "superagent": "^3.8.3"
   },
