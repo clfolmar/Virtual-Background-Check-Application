@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import GoogleMapsContainer from './GoogleMapsContainer';
+import { shallow, mount } from 'enzyme';
+import { mountToJson } from 'enzyme-to-json'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  const center = {
-  	lat: 25,
-  	lng: -72
-  }
-  ReactDOM.render(<GoogleMapsContainer center={center} zoom={10} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+const center = {
+	lat: 25,
+	lng: -72
+}
+
+describe('GoogleMapsContainer', () => {
+
+	it('renders fully without crashing', () => {
+		const component = mount(<GoogleMapsContainer center={center} zoom={10} />);
+		component.unmount();
+	});
+
+	it('full snapshot rendering', () => {
+		const component = mount(
+			<GoogleMapsContainer />
+			);
+		expect(mountToJson(component)).toMatchSnapshot();
+		component.unmount();
+	});
 });
