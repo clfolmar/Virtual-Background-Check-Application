@@ -20,8 +20,8 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 header.masthead .overlay {
@@ -40,8 +40,8 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -64,8 +64,8 @@ header.masthead h1 {
 }
 
 .features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .features-icons .features-icons-item {
@@ -73,15 +73,15 @@ header.masthead h1 {
 }
 
 .features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
+  height: 3rem;
 }
 
 .features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
+  font-size: 2rem;
 }
 
 .features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 
 .testimonials {
