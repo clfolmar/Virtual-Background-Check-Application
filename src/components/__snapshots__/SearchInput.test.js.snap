@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput full snapshot rendering 1`] = `
+<SearchInput
+  onSubmission={
+    Array [
+      [Function],
+    ]
+  }
+>
+  <header
+    className="masthead text-white text-center"
+  >
+    <div
+      className="overlay"
+    />
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-xl-9 mx-auto"
+        >
+          <h2
+            className="mb-5"
+          >
+            Verify if an IP Address is 
+            <span
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
+            >
+              blacklisted
+            </span>
+          </h2>
+        </div>
+        <div
+          className="col-md-10 col-lg-8 col-xl-7 mx-auto"
+        >
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="form-row"
+            >
+              <div
+                className="col-12 col-md-9 mb-2 mb-md-0"
+              >
+                <input
+                  className="form-control form-control-lg"
+                  onChange={[Function]}
+                  pattern="\\\\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\\\.|$)){4}\\\\b"
+                  placeholder="Enter IP Address to verify..."
+                  title="1.2.3.4"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                className="col-12 col-md-3"
+              >
+                <button
+                  className="btn btn-block btn-lg btn-primary"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+</SearchInput>
+`;

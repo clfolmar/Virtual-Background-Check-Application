@@ -279,7 +279,7 @@ class Container extends Component {
                 <SearchInput onSubmission={this.ipSearch} />
 
                 <div style={{width: '100%', height: '30vh', background: 'grey'}}>
-                    <GoogleMapsContainer style={{position: 'relative'}} center={center} zoom={10} />
+                    <GoogleMapsContainer center={center} zoom={10} />
                 </div>
 
                 <DataWrapper

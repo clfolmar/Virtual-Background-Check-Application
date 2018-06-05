@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoogleMapsContainer full snapshot rendering 1`] = `
+<Wrapper>
+  <DefaultLoadingContainer>
+    <div>
+      Loading...
+    </div>
+  </DefaultLoadingContainer>
+</Wrapper>
+`;
