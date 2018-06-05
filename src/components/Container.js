@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import GoogleMapsContainer from './GoogleMapsContainer'
 import DataWrapper from './DataWrapper'
 import SearchInput from './SearchInput'
