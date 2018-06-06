@@ -1,6 +1,6 @@
 # IP Verification Application 
 
-## This application utilizes [Apility.io's Free Blacklist API](https://apility.io/) to demonstrate how a system could look up a user's IP address and know immediately if they are [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/) so that it can decide to block them from accessing your application if necessary.
+## This application utilizes [Apility.io's Free Blacklist API](https://apility.io/) to demonstrate how a system could look up a user's IP address and know immediately if they are [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/) so that it can decide to block them from accessing the system if necessary.
 
 I decided to build this application as an introductory project to gain exposure to both the React.js framework and the cybersecurity industry as a whole.  [React](https://reactjs.org/) is one of, if not the preferred front-end framework today and after completing this project I can absolutely see why; it's modularity is incredible!  Additionally, cybersecurity is one of the hottest industries out there, but has been especially popular with everything that's been going on in the world (data leaks for instance) as of late.  
 
