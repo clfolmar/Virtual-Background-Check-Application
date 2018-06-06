@@ -36,7 +36,7 @@ class Container extends Component {
     }
 
     loadInitialData(){
-        const badIpUrl = "https://api.apility.net/badip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY;
+        const badIpUrl = "https://api.apility.net/badip/8.8.8.8?token=" + process.env.REACT_APP_APILITY_KEY;
 
         superagent
         .get(badIpUrl)
@@ -73,7 +73,7 @@ class Container extends Component {
             }
         })*/
 
-        const geoIpUrl = "https://api.apility.net/geoip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY;
+        const geoIpUrl = "https://api.apility.net/geoip/8.8.8.8?token=" + process.env.REACT_APP_APILITY_KEY;
 
         /*FetchDummyGeoIp()
             .then( (data) => {
