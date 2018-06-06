@@ -2,7 +2,7 @@
 
 ## This application utilizes the [Apility.io's Free Blacklist API](https://apility.io/) to demonstrate how a system could look up a user's IP Address and know immediately if they are [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/) so that it can decide to block them from accessing your application if necessary.
 
-![screenshot](https://github.com/clfolmar/react-ipverifier/blob/master/screenshot.jpg)
+![screenshot](https://github.com/clfolmar/travis-react-ipverifier/blob/master/screenshot.jpg)
 
 ## Technologies:
 - [Apility.io's API](https://apility.io/apidocs/)
