@@ -9,7 +9,7 @@
 - [Apility.io's API](https://apility.io/apidocs/)
 - [JSX](https://jsx.github.io/)
 - [npm](https://github.com/npm/npm)
-- [travis-ci](https://travis-ci.com/)
+- [Travis-CI](https://travis-ci.com/)
 - [google-maps-react](https://www.npmjs.com/package/google-maps-react)
 - [superagent](https://visionmedia.github.io/superagent/)
 - [enzyme](https://github.com/airbnb/enzyme)
