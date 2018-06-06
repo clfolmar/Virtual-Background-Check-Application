@@ -36,14 +36,35 @@ class Container extends Component {
     }
 
     loadInitialData(){
-        const badIpUrl = "https://api.apility.net/badip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY
+        const badIpUrl = "https://api.apility.net/badip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY;
 
-        /*fetchBadIp.then( (res) => {
+        superagent
+        .get(badIpUrl)
+        .query(null)
+        .set('Accept', 'text/json')
+        .end((error, response) => {
+
+            if(response.ok){
+
+                this.setState({
+                    found: true
+                })
+            }
+            else
+            {
+                this.setState({
+                    found: false
+                })
+            }
+        })
+
+        /*FetchDummyBadIp()
+        .then( (res) => {
             if(res.ok){
-                    this.setState({
-                        found: true
-                    })
-                }
+                this.setState({
+                    found: true
+                })
+            }
             else
             {
                 this.setState({
@@ -52,85 +73,9 @@ class Container extends Component {
             }
         })*/
 
-        /*fetch(badIpUrl)
-            .then( (res) => {
-                if(res.ok){
-                        this.setState({
-                            found: true
-                        })
-                    }
-                else
-                {
-                    this.setState({
-                        found: false
-                    })
-                }
-            })*/
+        const geoIpUrl = "https://api.apility.net/geoip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY;
 
-            superagent
-            .get(badIpUrl)
-            .query(null)
-            .set('Accept', 'text/json')
-            .end((error, response) => {
-
-                if(response.ok){
-
-                    this.setState({
-                        found: true,
-                        blacklisted: "The IP was found in at least one blacklist!"
-                    })
-                }
-                else
-                {
-                    this.setState({
-                        found: false,
-                        blacklisted: "The IP was not found in the database of blacklists!"
-                    })
-                }
-            })
-            .catch(error => console.log(error) );
-
-
-            const geoIpUrl = "https://api.apility.net/geoip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY
-
-        /*fetchGeoIp.then( (data) => {
-
-                const ipData = data.ip;
-
-                this.setState({
-                    ipData: ipData,
-
-                    address: ipData.address,
-
-                    latitude: parseFloat(ipData.latitude),
-
-                    longitude: parseFloat(ipData.longitude),
-
-                    hostname: ipData.hostname,
-
-                    continent: ipData.continent,
-
-                    country: ipData.country,
-
-                    region: ipData.region,
-
-                    city: ipData.city,
-
-                    postal: ipData.postal,
-
-                    timeZone: ipData.time_zone,
-
-                    asNumber: ipData.as.asn,
-
-                    asName: ipData.as.name,
-
-                    asCountry: ipData.as.country
-                })
-            })
-            */
-
-        /*fetch(geoIpUrl)
-            .then( (res) => res.json() )
+        /*FetchDummyGeoIp()
             .then( (data) => {
 
                 const ipData = data.ip;
@@ -164,8 +109,7 @@ class Container extends Component {
 
                     asCountry: ipData.as.country
                 })
-            })
-            */
+            })*/
 
             superagent
             .get(geoIpUrl)

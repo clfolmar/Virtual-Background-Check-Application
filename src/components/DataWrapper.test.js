@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme'
 import { mountToJson } from 'enzyme-to-json'
 import DataWrapper from './DataWrapper';
 
-const 	found=false,
+const found=false,
 address="1.2.3.4",
 hostname="Test Name",
 continent="Test Continent",
@@ -38,7 +38,7 @@ describe('DataWrapper', () => {
 			asName={asName}
 			asCountry={asCountry}
 			/>
-		);
+			);
 		component.unmount();
 	});
 
@@ -60,7 +60,7 @@ describe('DataWrapper', () => {
 			asName={asName}
 			asCountry={asCountry}
 			/>
-		);
+			);
 		expect(mountToJson(component)).toMatchSnapshot();
 		component.unmount();
 	});
@@ -83,7 +83,7 @@ describe('DataWrapper', () => {
 			asName={asName}
 			asCountry={asCountry}
 			/>
-		);
+			);
 		const populatedDataComponentElement = <p className="mb-0">{country}</p>;
 		expect(component.contains(populatedDataComponentElement)).toEqual(true);
 	});
