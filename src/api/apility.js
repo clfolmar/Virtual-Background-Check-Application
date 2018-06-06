@@ -1,10 +1,9 @@
-import superagent from 'superagent'
 
-// to help retrieve the ip information from Apility.io's API
+// to help retrieve default ip information from Apility.io's API
 export function FetchDummyBadIp() {
-	let url = "https://api.apility.net/badip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY;
+	let url = "https://api.apility.net/badip/1.2.3.4?token=" + process.env.REACT_APP_APILITY_KEY;
 
-	/*return fetch(url)
+	return fetch(url)
 	.then((response) => {
 
 		return response;
@@ -13,21 +12,12 @@ export function FetchDummyBadIp() {
 	.catch((ex) => {
 		//throw new Error('fetch failed' + ex)
 		console.log(ex);
-	});*/
-
-	superagent
-	.get(url)
-	.query(null)
-	.set('Accept', 'text/json')
-	.end((error, response) => {
-
-		return response;
-	})
+	});
 }
 
-// to help retrieve the ip information from Apility.io's API
+// to help retrieve default geo ip information from Apility.io's API
 export function FetchDummyGeoIp() {
-	let url = "https://api.apility.net/geoip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY;
+	let url = "https://api.apility.net/geoip/1.2.3.4?token=" + process.env.REACT_APP_APILITY_KEY;
 
 	return fetch(url)
 	.then((response) => {
@@ -40,8 +30,6 @@ export function FetchDummyGeoIp() {
 		console.log(ex);
 	});
 }
-
-
 
 // to help retrieve the ip information from Apility.io's API
 export function FetchBadIp(val) {
