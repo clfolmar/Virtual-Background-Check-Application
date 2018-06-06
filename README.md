@@ -32,8 +32,8 @@ After searching through the list of data feeds above, I found [Apility.io's Free
 - open terminal in this directory
 - run `npm install` in the terminal
 ## Prerequisites
-- get your own [Google Maps API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
-- get your own [Apility.io Free Blacklist API Key](https://dashboard.apility.io/#/register) by registering
+- get your own Google Maps API Key by following the instructions [here](https://developers.google.com/maps/documentation/javascript/get-api-key)
+- get your own Apility.io Free Blacklist API Key by registering [here](https://dashboard.apility.io/#/register)
 - create a `.env` file at the root directory of the application
 - add `REACT_APP_GOOGLE_KEY = <YOUR GOOGLE MAPS API KEY>` to the `.env` file
 - add `REACT_APP_APILITY_KEY = <YOUR APILITY API KEY>` to the `.env` file
