@@ -5,10 +5,11 @@
 ![screenshot](https://github.com/clfolmar/travis-react-ipverifier/blob/master/screenshot.jpg)
 
 # Technologies:
-- This project was bootstrapped with Facebook's [Create React App](https://github.com/facebookincubator/create-react-app).
+- This project was bootstrapped with Facebook's [Create React App](https://github.com/facebookincubator/create-react-app)
 - [Apility.io's API](https://apility.io/apidocs/)
 - [JSX](https://jsx.github.io/)
 - [npm](https://github.com/npm/npm)
+- [travis-ci](https://travis-ci.com/)
 - [google-maps-react](https://www.npmjs.com/package/google-maps-react)
 - [superagent](https://visionmedia.github.io/superagent/)
 - [enzyme](https://github.com/airbnb/enzyme)
@@ -19,7 +20,7 @@
 - [startbootsrap-landing-page](https://github.com/BlackrockDigital/startbootstrap-landing-page)
 
 
-### checkout the finished application
+### Checkout the finished application
 - clone or download this repo
 - navigate to the root directory of the application
 - open terminal in this directory
