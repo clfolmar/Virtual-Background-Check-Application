@@ -189,7 +189,7 @@ exports[`App full snapshot rendering 1`] = `
                 >
                   <Data
                     header="Continent"
-                    icon="icon-map"
+                    icon="fa fa-globe"
                   >
                     <div
                       className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
@@ -198,7 +198,7 @@ exports[`App full snapshot rendering 1`] = `
                         className="features-icons-icon d-flex"
                       >
                         <i
-                          className="icon-map m-auto text-primary"
+                          className="fa fa-globe m-auto text-primary"
                         />
                       </div>
                       <h5>
@@ -216,7 +216,7 @@ exports[`App full snapshot rendering 1`] = `
                   <Data
                     data=""
                     header="Country"
-                    icon="icon-home"
+                    icon="icon-globe-alt"
                   >
                     <div
                       className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
@@ -225,7 +225,7 @@ exports[`App full snapshot rendering 1`] = `
                         className="features-icons-icon d-flex"
                       >
                         <i
-                          className="icon-home m-auto text-primary"
+                          className="icon-globe-alt m-auto text-primary"
                         />
                       </div>
                       <h5>
@@ -274,7 +274,7 @@ exports[`App full snapshot rendering 1`] = `
                   <Data
                     data=""
                     header="City"
-                    icon="icon-vector"
+                    icon="fa fa-building-o"
                   >
                     <div
                       className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
@@ -283,7 +283,7 @@ exports[`App full snapshot rendering 1`] = `
                         className="features-icons-icon d-flex"
                       >
                         <i
-                          className="icon-vector m-auto text-primary"
+                          className="fa fa-building-o m-auto text-primary"
                         />
                       </div>
                       <h5>
@@ -328,7 +328,7 @@ exports[`App full snapshot rendering 1`] = `
                   <Data
                     data="null, null"
                     header="Latitude, Longitude"
-                    icon="icon-globe"
+                    icon="icon-map"
                   >
                     <div
                       className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
@@ -337,7 +337,7 @@ exports[`App full snapshot rendering 1`] = `
                         className="features-icons-icon d-flex"
                       >
                         <i
-                          className="icon-globe m-auto text-primary"
+                          className="icon-map m-auto text-primary"
                         />
                       </div>
                       <h5>
