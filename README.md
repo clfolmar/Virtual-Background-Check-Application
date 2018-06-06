@@ -19,17 +19,17 @@
 - [startbootsrap-landing-page](https://github.com/BlackrockDigital/startbootstrap-landing-page)
 
 
-### Checkout the finished application:
-- Clone or download this repo
+### checkout the finished application
+- clone or download this repo
 - navigate to the root directory of the application
 - open terminal in this directory
 - run `npm install` in the terminal
-### To start the application
+### Start the application
 - run `npm start` in the terminal
 - `index.html` will be opened in your local browser
-### To test the application
+### Test the application
 - run `npm test` in the terminal
-### To build the application
+### Build the application
 - run `npm run build` in the terminal
 
-For additional functionalty included out of the box with Facebook's "create-react-app" template, look [here](https://github.com/clfolmar/travis-react-ipverifier/blob/master/blob/master/src/README.md)
+For additional functionalty included with Facebook's "create-react-app" template, look [here](https://github.com/clfolmar/travis-react-ipverifier/blob/master/blob/master/src/README.md)
