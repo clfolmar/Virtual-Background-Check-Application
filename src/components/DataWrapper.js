@@ -38,11 +38,11 @@ class DataWrapper extends Component {
                         </div>
 
                         <div className="col-lg-3">
-                          <Data header="Continent" icon="icon-map" data={continent} />
+                          <Data header="Continent" icon="fa fa-globe" data={continent} />
                         </div>
 
                         <div className="col-lg-3">
-                          <Data header="Country" icon="icon-home" data={country} />
+                          <Data header="Country" icon="icon-globe-alt" data={country} />
                         </div>
 
                         <div className="col-lg-3">
@@ -53,7 +53,7 @@ class DataWrapper extends Component {
                       <div className="row">
 
                         <div className="col-lg-3">
-                          <Data header="City" icon="icon-vector" data={city} />
+                          <Data header="City" icon="fa fa-building-o" data={city} />
                         </div>
 
                         <div className="col-lg-3">
@@ -61,7 +61,7 @@ class DataWrapper extends Component {
                         </div>
 
                         <div className="col-lg-3">
-                          <Data header="Latitude, Longitude" icon="icon-globe" data={latitudeLongitude} />
+                          <Data header="Latitude, Longitude" icon="icon-map" data={latitudeLongitude} />
                         </div>
 
                         <div className="col-lg-3">
@@ -109,11 +109,11 @@ class DataWrapper extends Component {
                   </div>
 
                   <div className="col-lg-3">
-                    <Data header="Continent" icon="icon-map" data={continent} />
+                    <Data header="Continent" icon="fa fa-globe" data={continent} />
                   </div>
 
                   <div className="col-lg-3">
-                    <Data header="Country" icon="icon-home" data={country} />
+                    <Data header="Country" icon="icon-globe-alt" data={country} />
                   </div>
 
                   <div className="col-lg-3">
@@ -124,7 +124,7 @@ class DataWrapper extends Component {
                 <div className="row">
 
                   <div className="col-lg-3">
-                    <Data header="City" icon="icon-vector" data={city} />
+                    <Data header="City" icon="fa fa-building-o" data={city} />
                   </div>
 
                   <div className="col-lg-3">
@@ -132,7 +132,7 @@ class DataWrapper extends Component {
                   </div>
 
                   <div className="col-lg-3">
-                    <Data header="Latitude, Longitude" icon="icon-globe" data={latitudeLongitude} />
+                    <Data header="Latitude, Longitude" icon="icon-map" data={latitudeLongitude} />
                   </div>
 
                   <div className="col-lg-3">

@@ -1,8 +1,10 @@
+import superagent from 'superagent'
+
 // to help retrieve the ip information from Apility.io's API
 export function FetchDummyBadIp() {
 	let url = "https://api.apility.net/badip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY;
 
-	return fetch(url)
+	/*return fetch(url)
 	.then((response) => {
 
 		return response;
@@ -11,7 +13,16 @@ export function FetchDummyBadIp() {
 	.catch((ex) => {
 		//throw new Error('fetch failed' + ex)
 		console.log(ex);
-	});
+	});*/
+
+	superagent
+	.get(url)
+	.query(null)
+	.set('Accept', 'text/json')
+	.end((error, response) => {
+
+		return response;
+	})
 }
 
 // to help retrieve the ip information from Apility.io's API

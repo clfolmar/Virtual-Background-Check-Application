@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import GoogleMapsContainer from './GoogleMapsContainer'
 import DataWrapper from './DataWrapper'
 import SearchInput from './SearchInput'
-import { FetchDummyBadIp, FetchDummyGeoIp, FetchBadIp, FetchGeoIp } from '../api/apility'
+import superagent from 'superagent'
+import { FetchBadIp, FetchGeoIp } from '../api/apility'
 
 class Container extends Component {
     constructor(props) {
@@ -35,125 +36,267 @@ class Container extends Component {
     }
 
     loadInitialData(){
+        const badIpUrl = "https://api.apility.net/badip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY
 
-        FetchDummyBadIp()
-        .then( (res) => {
-
+        /*fetchBadIp.then( (res) => {
             if(res.ok){
-                this.setState({
-                    found: true
-                })
-            }
+                    this.setState({
+                        found: true
+                    })
+                }
             else
             {
                 this.setState({
                     found: false
                 })
             }
+        })*/
 
-        })
+        /*fetch(badIpUrl)
+            .then( (res) => {
+                if(res.ok){
+                        this.setState({
+                            found: true
+                        })
+                    }
+                else
+                {
+                    this.setState({
+                        found: false
+                    })
+                }
+            })*/
 
-        FetchDummyGeoIp()
-        .then( (data) => {
+            superagent
+            .get(badIpUrl)
+            .query(null)
+            .set('Accept', 'text/json')
+            .end((error, response) => {
 
-            const geoLocationData = data.ip;
+                if(response.ok){
 
-            this.setState({
-                ipData: geoLocationData,
-                address: geoLocationData.address,
-                latitude: parseFloat(geoLocationData.latitude),
-                longitude: parseFloat(geoLocationData.longitude),
-                hostname: geoLocationData.hostname,
-                continent: geoLocationData.continent,
-                country: geoLocationData.country,
-                region: geoLocationData.region,
-                city: geoLocationData.city,
-                postal: geoLocationData.postal,
-                timeZone: geoLocationData.time_zone,
-                asNumber: geoLocationData.as.asn,
-                asName: geoLocationData.as.name,
-                asCountry: geoLocationData.as.country
+                    this.setState({
+                        found: true,
+                        blacklisted: "The IP was found in at least one blacklist!"
+                    })
+                }
+                else
+                {
+                    this.setState({
+                        found: false,
+                        blacklisted: "The IP was not found in the database of blacklists!"
+                    })
+                }
             })
-        })
-    }
+            .catch(error => console.log(error) );
 
-    ipSearch(val){
 
-        FetchBadIp(val)
-        .then( (res) => {
+            const geoIpUrl = "https://api.apility.net/geoip/" + process.env.REACT_APP_MY_IP + "?token=" + process.env.REACT_APP_APILITY_KEY
 
-            if(res.ok){
+        /*fetchGeoIp.then( (data) => {
+
+                const ipData = data.ip;
+
                 this.setState({
-                    found: true
+                    ipData: ipData,
+
+                    address: ipData.address,
+
+                    latitude: parseFloat(ipData.latitude),
+
+                    longitude: parseFloat(ipData.longitude),
+
+                    hostname: ipData.hostname,
+
+                    continent: ipData.continent,
+
+                    country: ipData.country,
+
+                    region: ipData.region,
+
+                    city: ipData.city,
+
+                    postal: ipData.postal,
+
+                    timeZone: ipData.time_zone,
+
+                    asNumber: ipData.as.asn,
+
+                    asName: ipData.as.name,
+
+                    asCountry: ipData.as.country
                 })
-            }
-            else
-            {
-                this.setState({
-                    found: false
-                })
-            }
-
-        })
-
-        FetchGeoIp(val)
-        .then( (data) => {
-
-            const searchData = data.ip;
-
-            this.setState({
-                ipData: searchData,
-                address: searchData.address,
-                latitude: parseFloat(searchData.latitude),
-                longitude: parseFloat(searchData.longitude),
-                hostname: searchData.hostname,
-                continent: searchData.continent,
-                country: searchData.country,
-                region: searchData.region,
-                city: searchData.city,
-                postal: searchData.postal,
-                timeZone: searchData.time_zone,
-                asNumber: searchData.as.asn,
-                asName: searchData.as.name,
-                asCountry: searchData.as.country
             })
-        })
-    }
+            */
 
-    render (){
+        /*fetch(geoIpUrl)
+            .then( (res) => res.json() )
+            .then( (data) => {
 
-        const center = {
-            lat: this.state.latitude,
-            lng: this.state.longitude
+                const ipData = data.ip;
+
+                this.setState({
+                    ipData: ipData,
+
+                    address: ipData.address,
+
+                    latitude: parseFloat(ipData.latitude),
+
+                    longitude: parseFloat(ipData.longitude),
+
+                    hostname: ipData.hostname,
+
+                    continent: ipData.continent,
+
+                    country: ipData.country,
+
+                    region: ipData.region,
+
+                    city: ipData.city,
+
+                    postal: ipData.postal,
+
+                    timeZone: ipData.time_zone,
+
+                    asNumber: ipData.as.asn,
+
+                    asName: ipData.as.name,
+
+                    asCountry: ipData.as.country
+                })
+            })
+            */
+
+            superagent
+            .get(geoIpUrl)
+            .query(null)
+            .set('Accept', 'text/json')
+            .end((error, response) => {
+
+                const data = response.body.ip
+
+                this.setState({
+                    data: data,
+
+                    address: data.address,
+
+                    latitude: parseFloat(data.latitude),
+
+                    longitude: parseFloat(data.longitude),
+
+                    hostname: data.hostname,
+
+                    continent: data.continent,
+
+                    country: data.country,
+
+                    region: data.region,
+
+                    city: data.city,
+
+                    postal: data.postal,
+
+                    timeZone: data.time_zone,
+
+                    asNumber: data.as.asn,
+
+                    asName: data.as.name,
+
+                    asCountry: data.as.country
+                })
+            })
         }
 
-        return (
-            <div>
-            <SearchInput onSubmission={this.ipSearch} />
+        ipSearch(val){
 
-            <div style={{width: '100%', height: '30vh', background: 'grey'}}>
-            <GoogleMapsContainer center={center} zoom={10} />
-            </div>
+            FetchBadIp(val)
+            .then( (res) => {
 
-            <DataWrapper
-            found={this.state.found}
-            address={this.state.address}
-            hostname={this.state.hostname}
-            continenet={this.state.continent}
-            country={this.state.country}
-            region={this.state.region}
-            city={this.state.city}
-            postal={this.state.postal}
-            longitude={this.state.longitude} 
-            latitude={this.state.latitude}
-            timeZone={this.state.timeZone} 
-            asNumber={this.state.asNumber}
-            asName={this.state.asName}
-            asCountry={this.state.asCountry}
-            />
-            </div>
-            )
+                if(res.ok){
+                    this.setState({
+                        found: true
+                    })
+                }
+                else
+                {
+                    this.setState({
+                        found: false
+                    })
+                }
+
+            })
+
+            FetchGeoIp(val)
+            .then( (data) => {
+
+                const searchData = data.ip;
+
+                this.setState({
+                    ipData: searchData,
+
+                    address: searchData.address,
+
+                    latitude: parseFloat(searchData.latitude),
+
+                    longitude: parseFloat(searchData.longitude),
+
+                    hostname: searchData.hostname,
+
+                    continent: searchData.continent,
+
+                    country: searchData.country,
+
+                    region: searchData.region,
+
+                    city: searchData.city,
+
+                    postal: searchData.postal,
+
+                    timeZone: searchData.time_zone,
+
+                    asNumber: searchData.as.asn,
+
+                    asName: searchData.as.name,
+
+                    asCountry: searchData.as.country
+                })
+            })
         }
-    }
 
-    export default Container;
+        render (){
+
+            const center = {
+                lat: this.state.latitude,
+                lng: this.state.longitude
+            }
+
+            return (
+                <div>
+                <SearchInput onSubmission={this.ipSearch} />
+
+                <div style={{width: '100%', height: '30vh', background: 'grey'}}>
+                <GoogleMapsContainer center={center} zoom={10} />
+                </div>
+
+                <DataWrapper
+                found={this.state.found}
+                address={this.state.address}
+                hostname={this.state.hostname}
+                continenet={this.state.continent}
+                country={this.state.country}
+                region={this.state.region}
+                city={this.state.city}
+                postal={this.state.postal}
+                longitude={this.state.longitude} 
+                latitude={this.state.latitude}
+                timeZone={this.state.timeZone} 
+                asNumber={this.state.asNumber}
+                asName={this.state.asName}
+                asCountry={this.state.asCountry}
+                />
+                </div>
+                )
+            }
+        }
+
+        export default Container;
