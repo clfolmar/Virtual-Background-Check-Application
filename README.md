@@ -1,12 +1,18 @@
 # IP Verification Application 
 
-## This application utilizes the [Apility.io's Free Blacklist API](https://apility.io/) to demonstrate how a system could look up a user's IP Address and know immediately if they are [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/) so that it can decide to block them from accessing your application if necessary.
+## This application utilizes [Apility.io's Free Blacklist API](https://apility.io/) to demonstrate how a system could look up a user's IP address and know immediately if they are [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/) so that it can decide to block them from accessing the system if necessary.
+
+I decided to build this application as an introductory project to gain exposure to both the [React](https://reactjs.org/) JavaScript library and the [cybersecurity industry](https://searchsecurity.techtarget.com/definition/cybersecurity) as a whole.  React is one of, if not the preferred front-end library used today and after completing this project I can absolutely understand why; it has incredible modularity.  Additionally, cybersecurity is one of the hottest industries out there and has been especially popular with everything going on in the world (data leaks for instance) as of late.  
+
+Having not had the opportunity to gain any experience in cybersecurity at previous employers, I decided to utilize a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed) for this application.  With there being [so many different types of security intelligence data feeds available to choose from](https://github.com/hslatman/awesome-threat-intelligence), I wanted to select one that I would not only be able to understand, but could utilize practically in my application.  
+
+After searching through the list of data feeds above, I found [Apility.io's Free Blacklist API](https://apility.io/).  I had some prior understanding of what being "[blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/)" meant, thus decided I could utilize the API to demonstrate how an enterprise level solution could potentially verify a registering user's integrity by looking up if their IP was associated to a (or many) blacklist database(s).
 
 ![screenshot](https://github.com/clfolmar/travis-react-ipverifier/blob/master/screenshot.jpg)
 
-# Technologies:
-- This project was bootstrapped with Facebook's [Create React App](https://github.com/facebookincubator/create-react-app)
-- [Apility.io's API](https://apility.io/apidocs/)
+## Technologies:
+- [Facebook's Create React App](https://github.com/facebookincubator/create-react-app)
+- [Apility.io's Free Blacklist API](https://apility.io/apidocs/)
 - [JSX](https://jsx.github.io/)
 - [npm](https://github.com/npm/npm)
 - [Travis-CI](https://travis-ci.com/)
@@ -20,17 +26,27 @@
 - [startbootsrap-landing-page](https://github.com/BlackrockDigital/startbootstrap-landing-page)
 
 
-### Checkout the finished application
+## Checkout the finished application
 - clone or download this repo
 - navigate to the root directory of the application
 - open terminal in this directory
 - run `npm install` in the terminal
-### Start the application
+## Prerequisites
+- get your own Google Maps API Key by following the instructions [here](https://developers.google.com/maps/documentation/javascript/get-api-key)
+- get your own Apility.io Free Blacklist API Key by registering [here](https://dashboard.apility.io/#/register)
+- create a `.env` file at the root directory of the application
+- add `REACT_APP_GOOGLE_KEY = <YOUR GOOGLE MAPS API KEY>` to the `.env` file
+- add `REACT_APP_APILITY_KEY = <YOUR APILITY API KEY>` to the `.env` file
+- run `npm run build` in the terminal
+## Start & use the application
 - run `npm start` in the terminal
 - `index.html` will be opened in your local browser
-### Test the application
+- enter a valid IPv4 IP address in the search input field at the top of the page (eg. `1.2.3.4`)
+- click the `Search` button or press the `enter` to retrieve the relevant IP, GeoLocation, and Autonomous System information for the searched IP address from Apility.io's Free Blacklist API
+## Test the application
 - run `npm test` in the terminal
-### Build the application
+## Build the application
 - run `npm run build` in the terminal
 
-For additional functionalty included with Facebook's "create-react-app" template, look [here](https://github.com/clfolmar/travis-react-ipverifier/blob/master/blob/master/src/README.md)
+
+For additional functionalty included with Facebook's "create-react-app" template, look [here](https://github.com/clfolmar/travis-react-ipverifier/blob/master/src/README.md)
