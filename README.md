@@ -56,7 +56,7 @@ I found Apility.io's blacklist API and already had some prior understanding of w
 - <strong>[Chris Folmar](https://www.linkedin.com/in/clfolmar/)</strong>
 
 ## License
-This project is licensed with the MIT License - see the LICENSE.md file for details
+This project is licensed with the MIT License - see the [LICENSE.md](https://github.com/clfolmar/travis-react-ipverifier/blob/master/LICENSE.md) file for details
 
 ## Acknowledgements
 - [ReactJS.NET Tutorial](https://reactjs.net/getting-started/tutorial_aspnet4.html)
