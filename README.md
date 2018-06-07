@@ -30,7 +30,7 @@
 - run `npm install` in the terminal
 ## Before using
 - retrieve a Google Maps API Key by following the instructions [here](https://developers.google.com/maps/documentation/javascript/get-api-key)
-- retrieve a Apility.io Blacklist API Key by registering [here](https://dashboard.apility.io/#/register)
+- retrieve a Apility.io API Key by registering [here](https://dashboard.apility.io/#/register)
 - create a file named `.env` at the root directory of the application
 - add `REACT_APP_GOOGLE_KEY = <YOUR GOOGLE MAPS API KEY>` to the `.env` file
 - add `REACT_APP_APILITY_KEY = <YOUR APILITY API KEY>` to the `.env` file
@@ -39,7 +39,7 @@
 - run `npm start` in the terminal
 - `index.html` will be opened in your local browser
 - enter a valid IPv4 IP address in the search input field at the top of the page (eg. `1.2.3.4`)
-- click the `Search` button or press `enter` to retrieve the relevant IP, GeoLocation, and Autonomous System information for the searched IP address from Apility.io's blacklist API
+- click the `Search` button or press `enter` to retrieve the relevant IP, Geolocation, and Autonomous System information for the searched IP address from Apility.io's API
 ## Test the application
 - run `npm test` in the terminal
 ## Build the application
