@@ -59,9 +59,9 @@ I found Apility.io's blacklist API and already had some prior understanding of w
 This project is licensed with the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgements
--[ReactJS.NET Tutorial](https://reactjs.net/getting-started/tutorial_aspnet4.html)
--[React Tutorial](https://www.youtube.com/watch?v=N1J7Q1qJPQM&t=3s)
--[Testing](https://medium.com/wehkamp-techblog/unit-testing-your-react-application-with-jest-and-enzyme-81c5545cee45)
--[Travis-CI Integration](https://medium.com/@bezgachev/6-simple-steps-to-automatically-test-and-deploy-your-javascript-app-to-github-pages-c4c32a34bcb1)
+- [ReactJS.NET Tutorial](https://reactjs.net/getting-started/tutorial_aspnet4.html)
+- [React Tutorial](https://www.youtube.com/watch?v=N1J7Q1qJPQM&t=3s)
+- [Testing](https://medium.com/wehkamp-techblog/unit-testing-your-react-application-with-jest-and-enzyme-81c5545cee45)
+- [Travis-CI Integration](https://medium.com/@bezgachev/6-simple-steps-to-automatically-test-and-deploy-your-javascript-app-to-github-pages-c4c32a34bcb1)
 
 For additional functionalty included with Facebook's "create-react-app" template, look [here](https://github.com/clfolmar/travis-react-ipverifier/blob/master/src/README.md)
