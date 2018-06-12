@@ -38,6 +38,7 @@ import { GoogleApiWrapper, Map, Marker } from 'google-maps-react';
       );
     }
   }
+  
   export default GoogleApiWrapper({
     api: (process.env.REACT_APP_GOOGLE_KEY)
   })(GoogleMapsContainer)

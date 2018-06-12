@@ -170,8 +170,6 @@ import GoodIp from './GoodIp'
     }
   }
 
-
-
   export default DataWrapper;
 
 
