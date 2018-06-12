@@ -31,6 +31,7 @@
  		console.log(ex);
  	});
  }
+ 
 /**
  * helper function to retrieve the ip information from Apility.io's API
  */
