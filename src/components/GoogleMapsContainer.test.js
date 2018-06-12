@@ -17,9 +17,7 @@ describe('GoogleMapsContainer', () => {
 	});
 
 	it('full snapshot rendering', () => {
-		const component = mount(
-			<GoogleMapsContainer />
-			);
+		const component = mount(<GoogleMapsContainer />);
 		expect(mountToJson(component)).toMatchSnapshot();
 		component.unmount();
 	});

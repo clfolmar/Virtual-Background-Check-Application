@@ -14,9 +14,7 @@ describe('BadIp', () => {
 	});
 
 	it('full snapshot rendering', () => {
-		const component = mount(
-			<BadIp />
-			);
+		const component = mount(<BadIp />);
 		expect(mountToJson(component)).toMatchSnapshot();
 		component.unmount();
 	});

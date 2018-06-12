@@ -13,9 +13,7 @@ describe('SearchInput', () => {
 	});
 
 	it('full snapshot rendering', () => {
-		const component = mount(
-			<SearchInput onSubmission={[Function]} />
-			);
+		const component = mount(<SearchInput onSubmission={[Function]} />);
 		expect(mountToJson(component)).toMatchSnapshot();
 		component.unmount();
 	});
@@ -23,9 +21,10 @@ describe('SearchInput', () => {
 	it('renders submit button', () => {
 		const onSubmit = spy();
 		const component = mount(<SearchInput onSubmission={onSubmit} />);
-		const submitButton = <div className="col-12 col-md-3">
-								<button type="submit" className="btn btn-block btn-lg btn-primary">Search</button>
-							</div>;
+		const submitButton = 
+		<div className="col-12 col-md-3">
+			<button type="submit" className="btn btn-block btn-lg btn-primary">Search</button>
+		</div>;
 		expect(component.contains(submitButton)).toEqual(true);
 		component.unmount();
 	});

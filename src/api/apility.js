@@ -1,64 +1,66 @@
+/**
+ * helper function to retrieve default ip information from Apility.io's API
+ */
+ export function FetchDummyBadIp() {
+ 	let url = "https://api.apility.net/badip/1.2.3.4?token=" + process.env.REACT_APP_APILITY_KEY;
 
-// to help retrieve default ip information from Apility.io's API
-export function FetchDummyBadIp() {
-	let url = "https://api.apility.net/badip/1.2.3.4?token=" + process.env.REACT_APP_APILITY_KEY;
+ 	return fetch(url)
+ 	.then((response) => {
 
-	return fetch(url)
-	.then((response) => {
+ 		return response;
 
-		return response;
+ 	})
+ 	.catch((ex) => {
+ 		console.log(ex);
+ 	});
+ }
 
-	})
-	.catch((ex) => {
-		//throw new Error('fetch failed' + ex)
-		console.log(ex);
-	});
-}
+/**
+ * helper function to retrieve default geo ip information from Apility.io's API
+ */
+ export function FetchDummyGeoIp() {
+ 	let url = "https://api.apility.net/geoip/1.2.3.4?token=" + process.env.REACT_APP_APILITY_KEY;
 
-// to help retrieve default geo ip information from Apility.io's API
-export function FetchDummyGeoIp() {
-	let url = "https://api.apility.net/geoip/1.2.3.4?token=" + process.env.REACT_APP_APILITY_KEY;
+ 	return fetch(url)
+ 	.then((response) => {
 
-	return fetch(url)
-	.then((response) => {
+ 		return response.json();
 
-		return response.json();
+ 	})
+ 	.catch((ex) => {
+ 		console.log(ex);
+ 	});
+ }
+/**
+ * helper function to retrieve the ip information from Apility.io's API
+ */
+ export function FetchBadIp(val) {
+ 	let url = "https://api.apility.net/badip/" + val + "?token=" + process.env.REACT_APP_APILITY_KEY;
 
-	})
-	.catch((ex) => {
-		//throw new Error('fetch failed' + ex)
-		console.log(ex);
-	});
-}
+ 	return fetch(url)
+ 	.then((response) => {
 
-// to help retrieve the ip information from Apility.io's API
-export function FetchBadIp(val) {
-	let url = "https://api.apility.net/badip/" + val + "?token=" + process.env.REACT_APP_APILITY_KEY;
+ 		return response;
 
-	return fetch(url)
-	.then((response) => {
+ 	})
+ 	.catch((ex) => {
+ 		console.log(ex);
+ 	});
+ }
 
-		return response;
+/**
+ * helper function to retrieve the GeoLocation information from Apility.io's API
+ */
+ export function FetchGeoIp(val) {
+ 	let url = "https://api.apility.net/geoip/" + val + "?token=" + process.env.REACT_APP_APILITY_KEY;
 
-	})
-	.catch((ex) => {
-		//throw new Error('fetch failed' + ex)
-		console.log(ex);
-	});
-}
+ 	return fetch(url)
+ 	.then((response) => {
 
-// to help retrieve the GeoLocation information from Apility.io's API
-export function FetchGeoIp(val) {
-	let url = "https://api.apility.net/geoip/" + val + "?token=" + process.env.REACT_APP_APILITY_KEY;
+ 		return response.json();
 
-	return fetch(url)
-	.then((response) => {
-
-		return response.json();
-
-	})
-	.catch((ex) => {
-		//throw new Error('fetch failed' + ex)
-		console.log(ex);
-	});
-}
+ 	})
+ 	.catch((ex) => {
+ 		console.log(ex);
+ 	});
+ }

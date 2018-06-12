@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 import Container from './components/Container.js'
 
-class App extends Component {
-  render() {
+/**
+ * A component for the entire application
+ */
+ class App extends Component {
 
-    return (
-      <div>
-        <Container />
-      </div>
-    );
-  }
-}
+ 	/**
+     * render
+     * @return {ReactElement} markup
+     */
+     render() {
 
-export default App;
+     	return (
+     		<div>
+     		<Container />
+     		</div>
+     		);
+     	}
+     }
+
+     export default App;

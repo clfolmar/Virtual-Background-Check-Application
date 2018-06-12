@@ -22,21 +22,22 @@ asCountry="Test AS Country";
 describe('DataWrapper', () => { 
 
 	it('renders fully without crashing', () => {
-		const component = mount(<DataWrapper
-			found={found}
-			address={address}
-			hostname={hostname}
-			continenet={continent}
-			country={country}
-			region={region}
-			city={city}
-			postal={postal}
-			longitude={longitude} 
-			latitude={latitude}
-			timeZone={timeZone} 
-			asNumber={asNumber}
-			asName={asName}
-			asCountry={asCountry}
+		const component = mount(
+			<DataWrapper
+				found={found}
+				address={address}
+				hostname={hostname}
+				continenet={continent}
+				country={country}
+				region={region}
+				city={city}
+				postal={postal}
+				longitude={longitude} 
+				latitude={latitude}
+				timeZone={timeZone} 
+				asNumber={asNumber}
+				asName={asName}
+				asCountry={asCountry}
 			/>
 			);
 		component.unmount();
@@ -45,20 +46,20 @@ describe('DataWrapper', () => {
 	it('full snapshot rendering', () => {
 		const component = mount(
 			<DataWrapper
-			found={found}
-			address={address}
-			hostname={hostname}
-			continenet={continent}
-			country={country}
-			region={region}
-			city={city}
-			postal={postal}
-			longitude={longitude} 
-			latitude={latitude}
-			timeZone={timeZone} 
-			asNumber={asNumber}
-			asName={asName}
-			asCountry={asCountry}
+				found={found}
+				address={address}
+				hostname={hostname}
+				continenet={continent}
+				country={country}
+				region={region}
+				city={city}
+				postal={postal}
+				longitude={longitude} 
+				latitude={latitude}
+				timeZone={timeZone} 
+				asNumber={asNumber}
+				asName={asName}
+				asCountry={asCountry}
 			/>
 			);
 		expect(mountToJson(component)).toMatchSnapshot();
@@ -68,20 +69,20 @@ describe('DataWrapper', () => {
 	it('renders child with propogated data', () => {
 		const component = mount(
 			<DataWrapper
-			found={found}
-			address={address}
-			hostname={hostname}
-			continenet={continent}
-			country={country}
-			region={region}
-			city={city}
-			postal={postal}
-			longitude={longitude} 
-			latitude={latitude}
-			timeZone={timeZone} 
-			asNumber={asNumber}
-			asName={asName}
-			asCountry={asCountry}
+				found={found}
+				address={address}
+				hostname={hostname}
+				continenet={continent}
+				country={country}
+				region={region}
+				city={city}
+				postal={postal}
+				longitude={longitude} 
+				latitude={latitude}
+				timeZone={timeZone} 
+				asNumber={asNumber}
+				asName={asName}
+				asCountry={asCountry}
 			/>
 			);
 		const populatedDataComponentElement = <p className="mb-0">{country}</p>;

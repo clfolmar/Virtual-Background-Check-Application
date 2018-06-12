@@ -1,35 +1,59 @@
 import React, { Component } from 'react'
 
-class SearchInput extends Component {
-	constructor(props){
-		super(props);
+/**
+ * A search bar component
+ */
+ class SearchInput extends Component {
 
-		this.state = 
-		{
-			fieldVal: ""
-		};
+	/**
+     * constructor
+     * @param {object} props
+     */
+     constructor(props){
+     	super(props);
 
-		this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bind(this);
-	}
+		/**
+         * @type {object}
+         * @property {string} fieldVal - searched IP
+         */
+         this.state = 
+         {
+         	fieldVal: ""
+         };
 
-	handleChange(event) {
-		this.setState({fieldVal: event.target.value});
-	}
+         this.handleChange = this.handleChange.bind(this);
+         this.handleSubmit = this.handleSubmit.bind(this);
+     }
 
-	handleSubmit(event) {
-		event.preventDefault()
-		this.props.onSubmission(this.state.fieldVal)
-	}
+	/**
+     * handle change event at input form
+     * @param {SytheticEvent} event
+     */
+     handleChange(event) {
+     	this.setState({fieldVal: event.target.value});
+     }
 
-	render(){
+	/**
+     * handle submit form event
+     * @param {SytheticEvent} event
+     */
+     handleSubmit(event) {
+     	event.preventDefault()
+     	this.props.onSubmission(this.state.fieldVal)
+     }
 
-		var blacklisted = {
-              color: 'black'
-            };
+	/**
+     * render
+     * @return {ReactElement} markup
+     */
+     render(){
 
-		return(
-			<header className="masthead text-white text-center">
+     	var blacklisted = {
+     		color: 'black'
+     	};
+
+     	return(
+     		<header className="masthead text-white text-center">
 				<div className="overlay"></div>
 					<div className="container">
 						<div className="row">
@@ -61,8 +85,8 @@ class SearchInput extends Component {
 					</div>
 				</div>
 			</header>
-			);
-	}
-}
+ 		);
+     }
+ }
 
-export default SearchInput;
+ export default SearchInput;

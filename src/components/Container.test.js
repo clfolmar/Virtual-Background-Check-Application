@@ -12,18 +12,17 @@ describe('Container', () => {
 	});
 
 	it('full snapshot rendering', () => {
-		const component = mount(
-			<Container />
-			);
+		const component = mount(<Container />);
 		expect(mountToJson(component)).toMatchSnapshot();
 		component.unmount();
 	});
 
 	it('renders form submission button', () => {
 		const component = mount(<Container />);
-		const submit = 	<div className="col-12 col-md-3">
-							<button type="submit" className="btn btn-block btn-lg btn-primary">Search</button>
-						</div>;
+		const submit = 	
+		<div className="col-12 col-md-3">
+			<button type="submit" className="btn btn-block btn-lg btn-primary">Search</button>
+		</div>;
 		expect(component.contains(submit)).toEqual(true);
 		component.unmount();
 	});

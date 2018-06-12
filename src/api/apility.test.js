@@ -4,17 +4,17 @@ import { FetchDummyBadIp, FetchDummyGeoIp, FetchBadIp, FetchGeoIp } from './apil
 test('call FetchDummyBadIp', () => {
 
 	const testResponse = { 
-					status: 200, 
-					statusText: "OK",
-				};
+		status: 200, 
+		statusText: "OK",
+	};
 
 	fetchMock.get('*', testResponse);
 
 	const apiResult = FetchDummyBadIp()
-			.then( (response) => {
-				expect(response.status).toEqual(testResponse.status);
-				expect(response.statusText).toEqual(testResponse.statusText);
-			});
+	.then( (response) => {
+		expect(response.status).toEqual(testResponse.status);
+		expect(response.statusText).toEqual(testResponse.statusText);
+	});
 
 	fetchMock.restore();
 	return apiResult;
@@ -26,9 +26,9 @@ test('call FetchDummyGeoIp', () => {
 	fetchMock.get('*', testData);
 
 	const apiResult = FetchDummyGeoIp()
-			.then( (response) => {
-				expect(response).toEqual(testData);
-			});
+	.then( (response) => {
+		expect(response).toEqual(testData);
+	});
 
 	fetchMock.restore();
 	return apiResult;
@@ -37,17 +37,17 @@ test('call FetchDummyGeoIp', () => {
 test('call FetchBadIp', () => {
 
 	const testResponse = { 
-					status: 200, 
-					statusText: "OK",
-				};
+		status: 200, 
+		statusText: "OK",
+	};
 
 	fetchMock.get('*', testResponse);
 
 	const apiResult = FetchBadIp()
-			.then( (response) => {
-				expect(response.status).toEqual(testResponse.status);
-				expect(response.statusText).toEqual(testResponse.statusText);
-			});
+	.then( (response) => {
+		expect(response.status).toEqual(testResponse.status);
+		expect(response.statusText).toEqual(testResponse.statusText);
+	});
 
 	fetchMock.restore();
 	return apiResult;
@@ -59,9 +59,9 @@ test('call FetchGeoIp', () => {
 	fetchMock.get('*', testData);
 
 	const apiResult = FetchGeoIp()
-			.then( (response) => {
-				expect(response).toEqual(testData);
-			});
+	.then( (response) => {
+		expect(response).toEqual(testData);
+	});
 
 	fetchMock.restore();
 	return apiResult;

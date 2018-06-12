@@ -13,14 +13,11 @@ describe('App', () => {
 	it('renders Container component', () => {
 		const component = shallow(<App />);
 		const container = <Container />;
-		// expect (wrapper.contains(container)).to.equal(true);
 		expect(component.contains(container)).toEqual(true);
 	});
 
 	it('full snapshot rendering', () => {
-		const component = mount(
-			<App />
-			);
+		const component = mount(<App />);
 		expect(mountToJson(component)).toMatchSnapshot();
 		component.unmount();
 	});
