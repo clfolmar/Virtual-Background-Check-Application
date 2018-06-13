@@ -46,7 +46,7 @@
 - run `npm run build` in the terminal
 
 ## Why I built this project
-I decided to build this application to help introduce myself to the React JavaScript library and the [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) industry.  React is a popular front-end library used today because of its exceptional modularity.  Additionally, cybersecurity is one of the hottest industries out there and has been especially popular with everything going on in the world lately, like data breaches for instance.
+I decided to build this application to help introduce myself to the [React](https://reactjs.org/) JavaScript library and the [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) industry.  React is a popular front-end library used today because of its exceptional modularity.  Additionally, cybersecurity is one of the hottest industries out there and has been especially popular with everything going on in the world lately, like data breaches for instance.
 
 Having not had the opportunity to gain any experience in cybersecurity at previous employers, I decided to utilize a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed) for this application.  With there being [so many](https://github.com/hslatman/awesome-threat-intelligence) data feeds available to choose from, I wanted to select one that I would not only be able to understand, but could utilize practically in my application.
 
