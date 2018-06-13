@@ -19,9 +19,13 @@ import React, { Component } from 'react'
      	return(
      		<div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
      			<h4>{address}</h4>
+     			<div className="features-icons-icon d-flex">
+	     			<i style={greenStyle} className="fa fa-check-circle-o m-auto"></i>
+	     		</div>
      			<h5 style={greenStyle}>Not Found!</h5>
      			<p className="mb-0">The IP was not found in the database of blacklists!</p>
      		</div>
+	     		
      		);
      }
  }
