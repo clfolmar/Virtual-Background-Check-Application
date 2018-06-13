@@ -59,7 +59,7 @@ import React, { Component } from 'react'
 						<div className="row">
 							<div className="col-xl-9 mx-auto">
 							<h2 className="mb-5">
-								Verify if an IP Address is <span style={blacklisted}>blacklisted</span>
+								Perform a virtual background check
 							</h2>
 						</div>
 						<div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
@@ -69,7 +69,7 @@ import React, { Component } from 'react'
 											<input 
 												type="text" 
 												className="form-control form-control-lg" 
-												placeholder="Enter IP Address to verify..."
+												placeholder="Enter IP address to perform check on"
 												onChange={this.handleChange}
 												value={this.state.fieldVal}
 												pattern="\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}\b"
