@@ -7,7 +7,6 @@
 ## Project Goals
 - Build a simple, yet elegant application that visualizes a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed)
 - Utilize the [React](https://reactjs.org/) JavaScript library
-- Introduce myself to the [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) industry
 
 ## Technologies:
 - [Facebook's Create React App](https://github.com/facebookincubator/create-react-app)
@@ -47,7 +46,7 @@
 - run `npm run build` in the terminal
 
 ## Why I built this project
-I decided to build this application as an introductory project to gain exposure to both the React JavaScript library and the cybersecurity industry as a whole.  React is a popular front-end library used today and after completing this project I can absolutely understand why; it has incredible modularity.  Additionally, cybersecurity is one of the hottest industries out there and has been especially popular with everything going on in the world (data leaks for instance) as of late.
+I decided to build this application as an introductory project to gain exposure to both the React JavaScript library and the [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) industry as a whole.  React is a popular front-end library used today and after completing this project I can absolutely understand why; it has incredible modularity.  Additionally, cybersecurity is one of the hottest industries out there and has been especially popular with everything going on in the world (data leaks for instance) as of late.
 
 Having not had the opportunity to gain any experience in cybersecurity at previous employers, I decided to utilize a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed) for this application.  With there being [so many](https://github.com/hslatman/awesome-threat-intelligence) different security intelligence data feeds available to choose from, I wanted to select one that I would not only be able to understand, but could utilize practically in my application.
 
