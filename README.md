@@ -11,9 +11,9 @@
 ## Technologies:
 - [Facebook's Create React App](https://github.com/facebookincubator/create-react-app)
 - [Apility.io's Free Blacklist API](https://apility.io/apidocs/)
+- [Travis-CI](https://travis-ci.com/clfolmar/travis-react-ipverifier)
 - [JSX](https://jsx.github.io/)
 - [npm](https://github.com/npm/npm)
-- [Travis-CI](https://travis-ci.com/)
 - [google-maps-react](https://www.npmjs.com/package/google-maps-react)
 - [superagent](https://visionmedia.github.io/superagent/)
 - [enzyme](https://github.com/airbnb/enzyme)
