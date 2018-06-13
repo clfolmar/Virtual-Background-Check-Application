@@ -5,8 +5,9 @@
 ![screenshot](https://github.com/clfolmar/travis-react-ipverifier/blob/master/screenshot.jpg)
 
 ## Project Goals
-- Learn the [React](https://reactjs.org/) JavaScript library
-- Gain experience to [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) and a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed)
+- Build a simple, yet elegant application that visualizes a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed)
+- Utilize the [React](https://reactjs.org/) JavaScript library
+- Introduce myself to the [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) industry
 
 ## Technologies:
 - [Facebook's Create React App](https://github.com/facebookincubator/create-react-app)
