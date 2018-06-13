@@ -6,6 +6,18 @@ exports[`BadIp full snapshot rendering 1`] = `
     className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
   >
     <h4 />
+    <div
+      className="features-icons-icon d-flex"
+    >
+      <i
+        className="fa fa-ban m-auto"
+        style={
+          Object {
+            "color": "red",
+          }
+        }
+      />
+    </div>
     <h5
       style={
         Object {

@@ -35,6 +35,18 @@ exports[`DataWrapper full snapshot rendering 1`] = `
             <h4>
               1.2.3.4
             </h4>
+            <div
+              className="features-icons-icon d-flex"
+            >
+              <i
+                className="fa fa-check-circle-o m-auto"
+                style={
+                  Object {
+                    "color": "#06B400",
+                  }
+                }
+              />
+            </div>
             <h5
               style={
                 Object {
@@ -53,7 +65,7 @@ exports[`DataWrapper full snapshot rendering 1`] = `
         </GoodIp>
       </div>
       <h4>
-        IP Geolocation
+        Geolocation Data
       </h4>
       <div
         className="row"
@@ -293,7 +305,7 @@ exports[`DataWrapper full snapshot rendering 1`] = `
         </div>
       </div>
       <h4>
-        Autonomous System
+        Autonomous System Information
       </h4>
       <div
         className="row"

@@ -134,6 +134,18 @@ exports[`App full snapshot rendering 1`] = `
                     className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"
                   >
                     <h4 />
+                    <div
+                      className="features-icons-icon d-flex"
+                    >
+                      <i
+                        className="fa fa-check-circle-o m-auto"
+                        style={
+                          Object {
+                            "color": "#06B400",
+                          }
+                        }
+                      />
+                    </div>
                     <h5
                       style={
                         Object {
@@ -152,7 +164,7 @@ exports[`App full snapshot rendering 1`] = `
                 </GoodIp>
               </div>
               <h4>
-                IP Geolocation
+                Geolocation Data
               </h4>
               <div
                 className="row"
@@ -380,7 +392,7 @@ exports[`App full snapshot rendering 1`] = `
                 </div>
               </div>
               <h4>
-                Autonomous System
+                Autonomous System Information
               </h4>
               <div
                 className="row"
