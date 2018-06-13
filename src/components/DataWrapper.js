@@ -109,7 +109,7 @@ import GoodIp from './GoodIp'
 
             </div>
 
-            <h4>IP Geolocation</h4>
+            <h4>Geolocation Data</h4>
             <div className="row">
 
               <div className="col-lg-3">
@@ -148,7 +148,7 @@ import GoodIp from './GoodIp'
               </div>
 
             </div>    
-            <h4>Autonomous System</h4>
+            <h4>Autonomous System Information</h4>
             <div className="row">
 
               <div className="col-lg-4">
