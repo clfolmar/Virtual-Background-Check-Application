@@ -1,6 +1,6 @@
 # IP Verification Application 
 
-## This application utilizes [Apility.io's free blacklist API](https://apility.io/) to demonstrate how a system could verify a user by their IP address. By determining if the IP address is [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/), and gathering their Geolocation data and Autonomous System information, the system could decide to block the user's access if necessary.  In essence, this allows the system to perform a "virtual background check" on registering users, which helps maintain the system's integrity.
+## This application utilizes [Apility.io's free blacklist API](https://apility.io/) to demonstrate how a system could verify a user by their IP address. By determining if the IP address is [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/), and gathering their Geolocation data and Autonomous System information, the system could decide to block the user's access if necessary.  This allows the system to perform a "virtual background check" on new users, which helps maintain the system's integrity.
 
 ![screenshot](https://github.com/clfolmar/travis-react-ipverifier/blob/master/screenshot.jpg)
 
@@ -46,11 +46,11 @@
 - run `npm run build` in the terminal
 
 ## Why I built this project
-I decided to build this application as an introductory project to gain exposure to both the React JavaScript library and the [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) industry as a whole.  React is a popular front-end library used today and after completing this project I can absolutely understand why; it has incredible modularity.  Additionally, cybersecurity is one of the hottest industries out there and has been especially popular with everything going on in the world (data leaks for instance) as of late.
+I decided to build this application to help introduce myself to the React JavaScript library and the [cybersecurity](https://searchsecurity.techtarget.com/definition/cybersecurity) industry.  React is a popular front-end library used today because of its exceptional modularity.  Additionally, cybersecurity is one of the hottest industries out there and has been especially popular with everything going on in the world lately, like data breaches for instance.
 
-Having not had the opportunity to gain any experience in cybersecurity at previous employers, I decided to utilize a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed) for this application.  With there being [so many](https://github.com/hslatman/awesome-threat-intelligence) different security intelligence data feeds available to choose from, I wanted to select one that I would not only be able to understand, but could utilize practically in my application.
+Having not had the opportunity to gain any experience in cybersecurity at previous employers, I decided to utilize a [security intelligence data feed](https://whatis.techtarget.com/definition/threat-intelligence-feed) for this application.  With there being [so many](https://github.com/hslatman/awesome-threat-intelligence) data feeds available to choose from, I wanted to select one that I would not only be able to understand, but could utilize practically in my application.
 
-I found Apility.io's blacklist API and already had some prior understanding of what being "[blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/)" meant, thus decided I could utilize the API to demonstrate how an enterprise level solution could verify a registering user's integrity through looking up if their IP was found in a (or many) blacklist database(s).
+I found Apility.io's blacklist API and already had some prior understanding of what being "[blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/)" meant, thus decided I could utilize the API to demonstrate how an enterprise level solution could verify a new user's integrity with their IP address by checking if it is found in a (or many) blacklist database(s), as well as retrieving Geolocation data and Autonomous System information.
 
 ## Author
 - <strong>[Chris Folmar](https://www.linkedin.com/in/clfolmar/)</strong>
@@ -59,6 +59,7 @@ I found Apility.io's blacklist API and already had some prior understanding of w
 This project is licensed with the MIT License - see the [LICENSE.md](https://github.com/clfolmar/travis-react-ipverifier/blob/master/LICENSE.md) file for details
 
 ## Acknowledgements
+- [React Livecycle Method Overview](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1)
 - [ReactJS.NET Tutorial](https://reactjs.net/getting-started/tutorial_aspnet4.html)
 - [React Tutorial](https://www.youtube.com/watch?v=N1J7Q1qJPQM&t=3s)
 - [Testing](https://medium.com/wehkamp-techblog/unit-testing-your-react-application-with-jest-and-enzyme-81c5545cee45)
