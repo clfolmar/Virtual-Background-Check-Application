@@ -6,7 +6,7 @@ import superagent from 'superagent'
 import { FetchBadIp, FetchGeoIp } from '../api/apility'
 
 /**
- * A container component to hold the application's various components that make up the application
+ * A container component to hold the various components that make up the application
  */
  class Container extends Component {
 
