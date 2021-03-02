@@ -1,6 +1,8 @@
 # IP Verification Application 
 
-## This application utilizes [Apility.io's free blacklist API](https://apility.io/) to demonstrate how a system could verify a user by their IP address. By determining if the IP address is [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/), and gathering their Geolocation data and Autonomous System information, the system could decide to block the user's access if necessary.  This allows the system to perform a "virtual background check" on new users, which helps maintain the system's integrity.
+## This application utilizes [Apility.io's free blacklist API](https://apility.io/) which has unfortunately been depreciated.  With that being said, I will look for a replacement API for my application when I have spare time in the neat future.  
+
+## This application utilized the [Apility.io's free blacklist API](https://apility.io/) to demonstrate how a system could verify a user by their IP address. By determining if the IP address is [blacklisted](https://www.whatismyip.com/why-is-my-ip-blacklisted/), and gathering their Geolocation data and Autonomous System information, the system could decide to block the user's access if necessary.  This allows the system to perform a "virtual background check" on new users, which helps maintain the system's integrity.
 
 ![screenshot](https://github.com/clfolmar/travis-react-ipverifier/blob/master/application-screenshot.jpg)
 
