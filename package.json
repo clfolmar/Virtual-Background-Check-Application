@@ -14,7 +14,7 @@
     "react-scripts": "1.1.4",
     "react-test-renderer": "^16.4.0",
     "sinon": "^5.0.10",
-    "startbootstrap-landing-page": "^4.0.0",
+    "startbootstrap-landing-page": "^6.0.5",
     "superagent": "^3.8.3"
   },
   "scripts": {
