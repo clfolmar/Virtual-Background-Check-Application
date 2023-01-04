@@ -11,7 +11,7 @@
     "google-maps-react": "^2.0.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "react-test-renderer": "^16.4.0",
     "sinon": "^5.0.10",
     "startbootstrap-landing-page": "^4.0.0",
